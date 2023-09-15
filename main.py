@@ -7,6 +7,52 @@ Need to install and import keyboard to detect keypresses - global keypress monit
 
 '''
 
+
+
+#1. Impot Django
+
+#2. Start Django Project
+        #myproject/
+            #manage.py
+            #myproject/
+                #__init__.py
+                #settings.py
+                #urls.py
+                #asgi.py
+                #wsgi.py
+#3. Create new app:
+        #cd myproject
+        #python manage.py startapp myapp
+#myapp/
+    #migrations/
+     #   __init__.py
+   # __init__.py
+   #admin.py
+    #apps.py
+    #models.py
+    #tests.py
+    #views.py
+#4.Configure settings.py
+    #INSTALLED_APPS = [
+    #    ...
+    #    'myapp',
+    #]
+#Set Up a Database:
+#Django comes with SQLite by default, but you can configure it to use other databases like PostgreSQL, MySQL, etc. in the DATABASES setting of settings.py.
+    #Set Up URLs:
+    #In myproject/urls.py, you can include the URLs of your app:
+
+#5.Step 5: Run the Development Server
+# Use the following command to run the development server:
+    # python manage.py runserver
+#You can then navigate to http://127.0.0.1:8000/ in your browser to view the default Django page.
+
+
+
+
+
+
+
 import sys
 import termios
 import tty
