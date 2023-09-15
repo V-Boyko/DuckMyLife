@@ -52,4 +52,3 @@ user_test = print("Type something for the listener: ")
 
 testo = inputManager().listenToKeys()
 
-# su
