@@ -7,47 +7,54 @@ Need to install and import keyboard to detect keypresses - global keypress monit
 
 '''
 
-import sys
-import termios
-import tty
-import keyboard
 
-### Backend Dev ###
 
-# Intial commit should be a consol UI, inputManager handles all input and changes
-class inputManager():
-    def __init__(self):
-        self.buffer = ''
+# import sys
+# import termios
+# import tty
+# #import keyboard
+# import tkinter as tk
+
+
+# # Purpose: Listends to key events
+# # Parameters: None.
+# # Returns: None
+# def onTextChange(input, field):
+#     field.unbind("<<TextModified>>")
+#     # To prevent infinite loop, unbind the event !!!!!!!!!!!!!
+#     current = input.get()
+#     input.set(current + 'n')
     
-    # Purpose: Listends to key events
-    # Parameters: None.
-    # Returns: None
-    def listenToKeys(self):
-        # Save the terminal's current settings
 
-        while True:
-            event = keyboard.read_event()
-            print(self.buffer)
-            if event.event_type == 'enter':
-                print("Users output: " + self.buffer)
-                self.buffer = ''
-            elif event.name == 'backspace':
-                self.buffer = self.buffer[:-1]
-            elif len(event.name) == 1:
-                self.buffer += event.name
+# ### Backend Dev ###
 
-
-
-# Tracks keyboard events.
-
+# # Intial commit should be a consol UI, inputManager handles all input and changes
+# class inputManager():
+#     def __init__(self):
+#         self.buffer = ''
     
-# Autocomplete Engine.
+#     # Purpose: Listends to key events
+#     # Parameters: None.
+#     # Returns: None
+#     def onTextChange(self):
+#         pass
 
-# A retrospective auto complete that triggers every so many key strokes.
 
-# test area
+# main_window = tk.Tk()
+# main_window.geometry("400x600")
+# main_window.title('Text Box')
+# text_box = tk.Text(main_window,wrap=tk.WORD, height=10,width=10)
 
+# user_string = tk.StringVar()
 
-user_test = print("Type something for the listener: ")
+# def get_box():
+#     print(text_box.get())
 
-testo = inputManager().listenToKeys()
+# test_button = tk.Button(main_window, text="Test", command=get_box) #if we want to test initialize the function
+
+# text_box.bind("<<Modified>>", onTextChange(user_string,text_box))
+# text_box.pack()
+# test_button.pack()
+
+# tk.mainloop()
+
