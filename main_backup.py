@@ -7,8 +7,6 @@ Need to install and import keyboard to detect keypresses - global keypress monit
 
 '''
 
-
-
 # import sys
 # import termios
 # import tty
