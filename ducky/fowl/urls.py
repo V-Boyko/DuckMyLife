@@ -10,3 +10,4 @@ urlpatterns = [
 # note to test push
 
 
+# Vlads adjusted Code
