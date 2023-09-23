@@ -6,3 +6,7 @@ from . import views
 urlpatterns = [
     path("", views.base, name="base")
 ]
+
+# note to test push
+
+
