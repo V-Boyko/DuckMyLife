@@ -1,0 +1,20 @@
+{% extends 'fowl/base.html' %}
+
+{% block title %} Duck My Life {% endblock %}
+
+
+{% block content %}
+<div class="p-10 lg:p-20 text-center">
+    <h1 class="text-3xl lg:text-6xl text-white">Duck My Life</h1>
+</div>
+
+<!-- button and text box below needs function, crash on submit-->
+
+<div class="lg:w-2/4 mt-6 mx-4 lg:mx-auto p-4 bg-white rounded-xl">
+    <form method="post" action="." class="flex">
+        <input type="text" name="content" class="flex-1 mr-3" placeholder="Enter your message..." id="chat-message-input">
+        <button class="px-5 py-3 rounded-xl text-white bg-teal-600 hover:bg-teal-700" id="chat-message-submit">Submit</button>
+    </form>
+</div>
+
+{% endblock %}

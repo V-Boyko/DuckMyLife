@@ -2,7 +2,8 @@ from django.shortcuts import render
 
 # Create your views here.
 
-def base(request):
-    return render(request, "fowl/base.html")
+def frontpage(request):
+    return render(request, "fowl/frontpage.html")
 
-
+def editor(request):
+    return render(request, 'fowl/editor.html')
