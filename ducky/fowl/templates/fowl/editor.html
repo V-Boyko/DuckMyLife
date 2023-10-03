@@ -8,12 +8,15 @@
     <h1 class="text-3xl lg:text-6xl text-white">Duck My Life</h1>
 </div>
 
-<!-- button and text box below needs function, crash on submit-->
+<!-- button and text box below needs function, crash on submit class="lg:w-2/4 mt-6 mx-4 lg:mx-auto p-4 bg-white rounded-xl">
+    <form method="post">-->
 
-<div class="lg:w-2/4 mt-6 mx-4 lg:mx-auto p-4 bg-white rounded-xl">
-    <form method="post" action="." class="flex">
-        <input type="text" name="content" class="flex-1 mr-3" placeholder="Enter your message..." id="chat-message-input">
-        <button class="px-5 py-3 rounded-xl text-white bg-teal-600 hover:bg-teal-700" id="chat-message-submit">Submit</button>
+<div class="lg:w-2/4 mx-auto bg-black rounded-xl p-4 mt-6 mx-4 flex flex-col">
+    <form class="flex">
+        <textarea rows="8" class="flex-1 rounded-xl px-3 py-3"></textarea>
+        <!-- <button class="px-5 py-3 rounded-xl text-white bg-teal-600 hover:bg-teal-700" id="chat-message-submit">Submit</button> -->
+        <button class="mt-auto mx-3 px-5 py-3 h-1/2 rounded-xl text-white bg-orange-400 text-black hover:bg-orange-200 justify-right" id="message-submit">Send</button>
+
     </form>
 </div>
 
