@@ -12,9 +12,9 @@
     <form method="post">-->
         
 <div class="lg:w-2/4 mx-auto bg-black rounded-xl p-4 mt-6 mx-4 flex flex-col">
-    {csrf_token %}
-    <form class="flex" method="post">
-        <textarea rows="8" class="flex-1 rounded-xl px-3 py-3"></textarea>
+    <form class="flex" method="POST">
+        {% csrf_token %}
+        <textarea rows="8" name="text-box" class="flex-1 rounded-xl px-3 py-3"></textarea>
         <!-- <button class="px-5 py-3 rounded-xl text-white bg-teal-600 hover:bg-teal-700" id="chat-message-submit">Submit</button> -->
         <button class="mt-auto mx-3 px-5 py-3 h-1/2 rounded-xl text-white bg-orange-400 text-black hover:bg-orange-200 justify-right" id="message-submit">Send</button>
 
