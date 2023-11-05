@@ -15,6 +15,10 @@ def editor(request):
    print(type(text))
    return render(request, 'fowl/editor.html') 
 
+
+#TODO: put a function in that processes user input from message in the editor
+#TODO: Update editor page to populate messages (store messages as static)
+
 '''
 def editor(request):
     if request.method == 'POST':
